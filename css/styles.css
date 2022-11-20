@@ -2,6 +2,7 @@
 
 :root {
   --primary: #f7a100;
+  --primary-light: #fbbc48;
   --text-color: #333333;
   --link-color: #333333;
 }
@@ -57,13 +58,19 @@ header .main-links {
   height: 100%;
   color: white;
   display: flex;
+  list-style: none;
 }
-.main-links li {
+/* .main-links li {
+  display: grid;
+  place-items: center;
+} */
+.main-links li a {
   padding: 0 1rem;
+  color: white;
   height: 100%;
   display: grid;
   place-items: center;
 }
-.main-links li a {
-  color: white;
+.main-links li a:hover {
+  background-color: var(--primary-light);
 }
